@@ -1,0 +1,23 @@
+<div class="container" *ngIf="student">
+    <h2 class="text-center mt-5">Edit Student</h2>
+    <div class="d-flex justify-content-center">
+    <form class="text-center">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="division">Division</label>
+        <input type="text" class="form-control" id="division" [(ngModel)]="student.division" name="division">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" [(ngModel)]="student.age" name="age">
+      </div>
+      <br>
+      <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+    </form>      
+
+</div>
+  </div>
+  
